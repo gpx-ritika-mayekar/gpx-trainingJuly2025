@@ -1,7 +1,6 @@
 #!/bin/sh
 echo "*************************************"
 echo "Backup Script"
-echo "*************************************"
 
 
 SOURCE=$1
@@ -16,3 +15,4 @@ if [ -d "$SOURCE" ]; then
 else
     echo "$SOURCE input is not a directory"
 fi
+echo "*************************************"
