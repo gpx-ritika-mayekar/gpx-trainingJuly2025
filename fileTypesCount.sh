@@ -1,7 +1,7 @@
 #!/bin/bash
 
 EXTENSION=$1
-DIR=$2
+DIR=${2:-.}
 WILDCARD_PATH="$DIR/+.$EXTENSION"
 COUNT=0
 
