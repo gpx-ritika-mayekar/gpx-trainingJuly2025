@@ -1,6 +1,8 @@
 #!/bin/sh
-
+echo "*************************************"
 echo "Backup Script"
+echo "*************************************"
+
 
 SOURCE=$1
 DEST=$2
@@ -12,5 +14,5 @@ if [ -d "$SOURCE" ]; then
     tar -czvf "$BACKUP_FILE" -C "$DEST" . 
     echo "$SOURE is a directory"
 else
-    echo "$SOURCE is not a directory"
+    echo "$SOURCE input is not a directory"
 fi
